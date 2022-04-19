@@ -11,7 +11,9 @@ Django: [Descargar](https://www.djangoproject.com/download/) |
 [Tutorial castellano](https://docs.djangoproject.com/es/4.0/intro/) |
 [Documentación](https://docs.djangoproject.com/es/4.0/)
 
-Editores código: [Atom](https://atom.io/) [VSCodium](https://vscodium.com/) [Pyzo](https://pyzo.org/)
+Editores código: [Atom](https://atom.io/) |
+[VSCodium](https://vscodium.com/) |
+[Pyzo](https://pyzo.org/)
 
 Otros editores código: [VSCode](https://code.visualstudio.com/) | 
 [Pycharm](https://www.jetbrains.com/pycharm/) |
