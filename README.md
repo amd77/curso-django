@@ -2,10 +2,10 @@
 
 ## Descargas
 
+Git: [Descargar](https://git-scm.com/download/)
+
 Python: [Descargar](https://www.python.org/downloads/) | 
 [Tutorial castellano](https://docs.python.org/es/3/tutorial/index.html)
-
-Git: [Descargar](https://git-scm.com/download/)
 
 Django: [Descargar](https://www.djangoproject.com/download/) |
 [Tutorial castellano](https://docs.djangoproject.com/es/4.0/intro/) |
