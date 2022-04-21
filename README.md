@@ -1,6 +1,8 @@
 # Curso Django
 
-## Descargas
+## Pasos previos
+
+### Descargas
 
 Git: [Descargar](https://git-scm.com/download/)
 
@@ -26,7 +28,7 @@ Instaladores para Windows: [Winget](https://github.com/microsoft/winget-cli) |
 [Chocolatey](https://community.chocolatey.org/packages) 
 
 
-## GIT
+### GIT
 
 La primera vez:
 
@@ -74,3 +76,7 @@ Preferimos cambios pequeños y líneas sencillas, [prefijos estándares](https:/
 * `perf:` aumenta performance
 * `chore:` limpieza de funciones no usadas
 
+
+### Visual Studio Code
+
+* [Tutorial oficial Microsoft](https://code.visualstudio.com/docs/python/tutorial-django)
