@@ -1,10 +1,13 @@
 from django.contrib import admin
 from .models import Edificio, Habitacion
 
+class HabitacionInline(admin.TabularInline):
+    model = Habitacion
+
 
 @admin.register(Edificio)
 class EdificioAdmin(admin.ModelAdmin):
-    pass
+    inlines = [HabitacionInline]
 
 
 @admin.register(Habitacion)
