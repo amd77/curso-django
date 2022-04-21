@@ -80,3 +80,38 @@ Preferimos cambios pequeños y líneas sencillas, [prefijos estándares](https:/
 ### Visual Studio Code
 
 * [Tutorial oficial Microsoft](https://code.visualstudio.com/docs/python/tutorial-django)
+* Con putty generar claves y registrar la clave publica en [github](https://github.com/settings/ssh/new)
+
+
+### Creacion de entorno virtual
+
+```
+python -m venv .venv  # Crear en una carpeta "aislado"
+python -m venv .venv --system-site-packages  # o usando lo que hay en el sistema
+source .venv/bin/activate  # Esto lo activa
+. .venv/bin/activate  # Esto tambien (en linux se puede poner .)
+deactivate  # Esto lo desactiva
+```
+
+### Instalación de librerias y paquetes
+
+```
+pip freeze  # ver paquetes instalados
+pip install django  # instalar ultima version
+pip install 'django < 4'  # instalar ultima con limite
+pip install 'django == 3.2.11'  # instalar version concreta
+pip install -r requirements.txt  # instalar versiones desde un fichero
+```
+
+### Primeros pasos en django
+
+```
+django-admin startproject nombre_del_proyecto
+mv nombre_del_proyecto src
+cd src
+python manage.py
+python manage.py migrate  # Crea la base de datos
+python ./manage.py createsuperuser  # Crea usuario admin
+python ./manage.py runserver  # ver con http://localhost:8000/
+python ./manage.py runserver 0.0.0.0:8000   # ver desde toda la LAN
+```
