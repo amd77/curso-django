@@ -150,3 +150,14 @@ Las de `django_extensions`:
 * `./manage.py print_settings`: muestra todos los settings (los default y los del settings.py)
 * `./manage.py shell_plus`: muestra un shell con todos los modelos cargados
 * `./manage.py sqldiff`: muestra discrepancias entre bd y models
+
+### Meta de los modelos:
+
+* `verbose_name`: cambiar el nombre en singular del modelo, p.ej si tiene tildes o simbolos
+* `verbose_name_plural`: cambiar el nombre plural del modelo, que por defecto solo le agrega una s
+* `ordering`: lista de campos para hacer ordenacion, por ejemplo, `['apell1', 'apell2', 'nombre']`
+* `unique_together`: evita filas duplicadas atendiendo a estos criterios multiples (para sencillos, `unique=True` en campo)
+* `db_table`: cambiar el nombre de la tabla, que por defecto es `aplicacion_modelo`
+* `managed`: se pone a False para decirle que no cree tablas/migraciones para este modelo
+* `abstract`: este modelo no genera tabla, es solo para ser el base de una herencia
+* `indexes`/`index_together`: crea indices para estos campos para acelerar consultas base de datos
