@@ -115,3 +115,38 @@ python ./manage.py createsuperuser  # Crea usuario admin
 python ./manage.py runserver  # ver con http://localhost:8000/
 python ./manage.py runserver 0.0.0.0:8000   # ver desde toda la LAN
 ```
+
+### Management commands
+
+Para trabajar con bases de datos o cambios en los modelos:
+
+* `./manage.py showmigrations`: muestra migraciones y si estan aplicadas o no
+* `./manage.py makemigrations [app]`: crea migraciones de cambios en models.py
+* `./manage.py migrate`: crea base de datos y aplica las migraciones sin aplicar
+
+* `./manage.py createsuperuser`: crear usuario administrativo
+* `./manage.py changepassword [usuario]`: cambiar contraseña usuario
+* `./manage.py dbshell`: habre conexion SQL a la base de datos
+
+Para crear o cargar fixtures:
+
+* `./manage.py dumpdata [app1] [app2.modelo] --indent 1 -o fixture.json`: guarda bd en json
+* `./manage.py loaddata fixture.json`: carga json en bd
+
+Para el dia a dia:
+
+* `./manage.py runserver`: genera un servidor en http://localhost:8000/
+* `./manage.py check`: hace comprobaciones basicas
+* `./manage.py startapp [nombre]`: crea una app vacia en el proyecto actual
+* `./manage.py shell`: abre un shell de python con django cargado
+* `./manage.py diffsettings`: muestra las settings.py que se han cambiado (o extra)
+* (`./manage.py collectstatic`: copia estaticos a `STATIC_URL`)
+
+Las de `django_extensions`:
+
+* `./manage.py graph_models [app] -o app.png`: genera grafico modelos (instalar pydotplus)
+* `./manage.py dumpscript`: vuelca la base de datos en codigo python
+* `./manage.py generate_secret_key`: genera una `SECRET_KEY` aleatoria
+* `./manage.py print_settings`: muestra todos los settings (los default y los del settings.py)
+* `./manage.py shell_plus`: muestra un shell con todos los modelos cargados
+* `./manage.py sqldiff`: muestra discrepancias entre bd y models
